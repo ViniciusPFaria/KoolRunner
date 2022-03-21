@@ -1,0 +1,45 @@
+{
+    "name": "MainLoopInputs",
+    "maps": [
+        {
+            "name": "BasicMap",
+            "id": "5f69fe3b-4cf6-4ec1-8b76-9464f21d340d",
+            "actions": [
+                {
+                    "name": "MainButton",
+                    "type": "Button",
+                    "id": "b9972979-155d-4cd3-a515-0f5129e2136c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9992a89f-6a7b-4edb-9809-5d1dc2534eb7",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a750e1c1-4f6f-4c64-8b94-105dada3784f",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
