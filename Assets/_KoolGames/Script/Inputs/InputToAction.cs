@@ -21,7 +21,7 @@ namespace KoolGames
 
         private void OnClickPerformed(CallbackContext context)
         {
-            Vector2 clickPosition = _inputActions.BasicMap.OnClick.ReadValue<Vector2>();
+            Vector2 clickPosition = _inputActions.BasicMap.MousePosition.ReadValue<Vector2>();
             onClick?.Invoke(clickPosition);
         }
 

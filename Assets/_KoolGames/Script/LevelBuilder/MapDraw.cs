@@ -9,6 +9,8 @@ namespace KoolGames
         [SerializeField] private Vector2 _mapSize = new Vector2(20f, 20f);
         [SerializeField] private Vector2 _unitiSize;
         [SerializeField] private GameObject mapBackgroundPrefab;
+        
+        private List<BaseMapObject> _mapObjectsList;
 
         // Start is called before the first frame update
         void Start()
@@ -18,12 +20,15 @@ namespace KoolGames
 
         private void CreateDrawMap()
         {
+            _mapObjectsList = new List<BaseMapObject>();
             // Draw a map
             for (int x = 0; x < _mapSize.x; x++)
             {
                 for (int y = 0; y < _mapSize.y; y++)
                 {
                     GameObject cube = GameObject.Instantiate(mapBackgroundPrefab, transform);
+                    _mapObjectsList.Add(cube.GetComponent<BaseMapObject>());
+
                     cube.transform.localScale = new Vector3(_unitiSize.x, _unitiSize.y, 1);
 
                     float mapPosX = x * _unitiSize.x;
@@ -43,6 +48,11 @@ namespace KoolGames
 
             baseMapObject.Initialize(this, positionInGrid);
 
+        }
+
+        public List<BaseMapObject> GetMapObjectsList()
+        {
+            return _mapObjectsList;
         }
 
     }
