@@ -46,6 +46,15 @@ namespace KoolGames
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseDrag"",
+                    ""type"": ""Value"",
+                    ""id"": ""e7c13731-5f4c-4a41-87a7-fa8d9295b9c6"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -92,6 +101,17 @@ namespace KoolGames
                     ""action"": ""MousePosition"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bb260714-b961-44ea-b0ea-ab6df7a8cb85"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseDrag"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -102,6 +122,7 @@ namespace KoolGames
             m_BasicMap = asset.FindActionMap("BasicMap", throwIfNotFound: true);
             m_BasicMap_OnClick = m_BasicMap.FindAction("OnClick", throwIfNotFound: true);
             m_BasicMap_MousePosition = m_BasicMap.FindAction("MousePosition", throwIfNotFound: true);
+            m_BasicMap_MouseDrag = m_BasicMap.FindAction("MouseDrag", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -163,12 +184,14 @@ namespace KoolGames
         private IBasicMapActions m_BasicMapActionsCallbackInterface;
         private readonly InputAction m_BasicMap_OnClick;
         private readonly InputAction m_BasicMap_MousePosition;
+        private readonly InputAction m_BasicMap_MouseDrag;
         public struct BasicMapActions
         {
             private @MainLoopInputs m_Wrapper;
             public BasicMapActions(@MainLoopInputs wrapper) { m_Wrapper = wrapper; }
             public InputAction @OnClick => m_Wrapper.m_BasicMap_OnClick;
             public InputAction @MousePosition => m_Wrapper.m_BasicMap_MousePosition;
+            public InputAction @MouseDrag => m_Wrapper.m_BasicMap_MouseDrag;
             public InputActionMap Get() { return m_Wrapper.m_BasicMap; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -184,6 +207,9 @@ namespace KoolGames
                     @MousePosition.started -= m_Wrapper.m_BasicMapActionsCallbackInterface.OnMousePosition;
                     @MousePosition.performed -= m_Wrapper.m_BasicMapActionsCallbackInterface.OnMousePosition;
                     @MousePosition.canceled -= m_Wrapper.m_BasicMapActionsCallbackInterface.OnMousePosition;
+                    @MouseDrag.started -= m_Wrapper.m_BasicMapActionsCallbackInterface.OnMouseDrag;
+                    @MouseDrag.performed -= m_Wrapper.m_BasicMapActionsCallbackInterface.OnMouseDrag;
+                    @MouseDrag.canceled -= m_Wrapper.m_BasicMapActionsCallbackInterface.OnMouseDrag;
                 }
                 m_Wrapper.m_BasicMapActionsCallbackInterface = instance;
                 if (instance != null)
@@ -194,6 +220,9 @@ namespace KoolGames
                     @MousePosition.started += instance.OnMousePosition;
                     @MousePosition.performed += instance.OnMousePosition;
                     @MousePosition.canceled += instance.OnMousePosition;
+                    @MouseDrag.started += instance.OnMouseDrag;
+                    @MouseDrag.performed += instance.OnMouseDrag;
+                    @MouseDrag.canceled += instance.OnMouseDrag;
                 }
             }
         }
@@ -202,6 +231,7 @@ namespace KoolGames
         {
             void OnOnClick(InputAction.CallbackContext context);
             void OnMousePosition(InputAction.CallbackContext context);
+            void OnMouseDrag(InputAction.CallbackContext context);
         }
     }
 }
