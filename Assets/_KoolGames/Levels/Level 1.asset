@@ -174,33 +174,33 @@ MonoBehaviour:
   - gridPosition: {x: 3, y: 19}
     mapDir: 3
   - gridPosition: {x: 4, y: 0}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 1}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 2}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 3}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 4}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 5}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 6}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 7}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 8}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 9}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 10}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 11}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 12}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 4, y: 13}
-    mapDir: 1
+    mapDir: 3
   - gridPosition: {x: 4, y: 14}
     mapDir: 3
   - gridPosition: {x: 4, y: 15}
@@ -214,23 +214,23 @@ MonoBehaviour:
   - gridPosition: {x: 4, y: 19}
     mapDir: 3
   - gridPosition: {x: 5, y: 0}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 1}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 2}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 3}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 4}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 5}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 6}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 7}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 5, y: 8}
-    mapDir: 3
+    mapDir: 1
   - gridPosition: {x: 5, y: 9}
     mapDir: 3
   - gridPosition: {x: 5, y: 10}
@@ -240,7 +240,7 @@ MonoBehaviour:
   - gridPosition: {x: 5, y: 12}
     mapDir: 3
   - gridPosition: {x: 5, y: 13}
-    mapDir: 1
+    mapDir: 3
   - gridPosition: {x: 5, y: 14}
     mapDir: 3
   - gridPosition: {x: 5, y: 15}
@@ -270,7 +270,7 @@ MonoBehaviour:
   - gridPosition: {x: 6, y: 7}
     mapDir: 3
   - gridPosition: {x: 6, y: 8}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 6, y: 9}
     mapDir: 3
   - gridPosition: {x: 6, y: 10}
@@ -280,7 +280,7 @@ MonoBehaviour:
   - gridPosition: {x: 6, y: 12}
     mapDir: 3
   - gridPosition: {x: 6, y: 13}
-    mapDir: 1
+    mapDir: 3
   - gridPosition: {x: 6, y: 14}
     mapDir: 3
   - gridPosition: {x: 6, y: 15}
@@ -310,7 +310,7 @@ MonoBehaviour:
   - gridPosition: {x: 7, y: 7}
     mapDir: 3
   - gridPosition: {x: 7, y: 8}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 7, y: 9}
     mapDir: 3
   - gridPosition: {x: 7, y: 10}
@@ -320,7 +320,7 @@ MonoBehaviour:
   - gridPosition: {x: 7, y: 12}
     mapDir: 3
   - gridPosition: {x: 7, y: 13}
-    mapDir: 1
+    mapDir: 3
   - gridPosition: {x: 7, y: 14}
     mapDir: 3
   - gridPosition: {x: 7, y: 15}
@@ -350,7 +350,7 @@ MonoBehaviour:
   - gridPosition: {x: 8, y: 7}
     mapDir: 3
   - gridPosition: {x: 8, y: 8}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 8, y: 9}
     mapDir: 3
   - gridPosition: {x: 8, y: 10}
@@ -360,7 +360,7 @@ MonoBehaviour:
   - gridPosition: {x: 8, y: 12}
     mapDir: 3
   - gridPosition: {x: 8, y: 13}
-    mapDir: 1
+    mapDir: 3
   - gridPosition: {x: 8, y: 14}
     mapDir: 3
   - gridPosition: {x: 8, y: 15}
@@ -390,23 +390,23 @@ MonoBehaviour:
   - gridPosition: {x: 9, y: 7}
     mapDir: 3
   - gridPosition: {x: 9, y: 8}
-    mapDir: 3
+    mapDir: 2
   - gridPosition: {x: 9, y: 9}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 9, y: 10}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 9, y: 11}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 9, y: 12}
-    mapDir: 3
+    mapDir: 0
   - gridPosition: {x: 9, y: 13}
     mapDir: 0
   - gridPosition: {x: 9, y: 14}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 9, y: 15}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 9, y: 16}
-    mapDir: 0
+    mapDir: 3
   - gridPosition: {x: 9, y: 17}
     mapDir: 3
   - gridPosition: {x: 9, y: 18}

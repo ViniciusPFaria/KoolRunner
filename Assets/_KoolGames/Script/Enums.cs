@@ -8,7 +8,7 @@ namespace KoolGames
     {
         public enum MapDir
         {
-            Strait,
+            Forward,
             Right,
             Left,
             Empty

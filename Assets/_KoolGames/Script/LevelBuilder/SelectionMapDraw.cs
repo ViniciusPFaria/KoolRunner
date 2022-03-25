@@ -40,7 +40,7 @@ namespace KoolGames
                 case MapDir.Left:
                     baseMapObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
                     break;
-                case MapDir.Strait:
+                case MapDir.Forward:
                     baseMapObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
                     break;
                 case MapDir.Empty:
