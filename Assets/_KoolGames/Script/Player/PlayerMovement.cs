@@ -32,13 +32,14 @@ namespace KoolGames
         private void OnDrag(Vector2 dragDelta)
         {
             float xForce = dragDelta.x;
+            xForce = Math.Clamp(xForce, -10, 10);
 
             float finalMovementAditive = xForce * _sideSpeed * Time.deltaTime;
             Vector3 playerPosition = transform.position;
 
             if (!IsNextPositionOnFloor(finalMovementAditive))
                 return;
-         
+
 
 
             transform.localPosition += finalMovementAditive * transform.right;

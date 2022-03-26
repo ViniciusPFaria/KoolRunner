@@ -13,6 +13,7 @@ namespace KoolGames
         // Start is called before the first frame update
         void Start()
         {
+            
             Vector3 initialPosition = _generateLevel.GetStartPosition();
 
             _playerMovement.SetInitialPosition(initialPosition);
@@ -23,6 +24,10 @@ namespace KoolGames
         void Update()
         {
         
+        }
+
+        public void slow(){
+Time.timeScale = 0.2f;
         }
     }
 }

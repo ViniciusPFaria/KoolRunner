@@ -12,18 +12,14 @@ namespace KoolGames
             PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
             if (playerMovement == null)
                 return;
-            
-            switch (turnDirection)
-            {
-                case Enums.MapDir.Right:
-                    playerMovement.RotateRight();
-                    break;
-                case Enums.MapDir.Left:
-                    playerMovement.RotateLeft();
-                    break;
-                    default:
-                    break;
-            }
+
+            if (turnDirection == Enums.MapDir.Right)
+                playerMovement.RotateRight();
+
+            if (turnDirection == Enums.MapDir.Left)
+                playerMovement.RotateLeft();
+
+            gameObject.SetActive(false);
         }
     }
 }

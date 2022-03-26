@@ -14,5 +14,11 @@ namespace KoolGames
             Empty
         }
 
+        public enum MapItem{
+            Empty,
+            Obstacle,
+            Coin
+        }
+
     }
 }
